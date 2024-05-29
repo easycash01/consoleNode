@@ -1,0 +1,17 @@
+[
+    {
+        "nome" : "Gianni",
+        "mail" : "Email@dominio.com",
+        "telefono" : "079"
+    },
+    {
+        "nome" : "Luca",
+        "mail" : "Lucazz@dominio.com",
+        "telefono" : "079"
+    },
+    {
+        "nome" : "Anna",
+        "mail" : "Annall@dominio.com",
+        "telefono" : "079"
+    }
+]
