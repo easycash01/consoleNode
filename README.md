@@ -1,2 +1,2 @@
 # consoleNode
-Simple program console in node
+Simple program console in node js
