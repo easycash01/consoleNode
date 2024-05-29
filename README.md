@@ -1,2 +1,2 @@
 # consoleNode
-Simple program in node console
+Simple program console in node
