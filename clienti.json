@@ -7,11 +7,16 @@
     {
         "nome" : "Luca",
         "mail" : "Lucazz@dominio.com",
-        "telefono" : "079"
+        "telefono" : "34208-----"
     },
     {
         "nome" : "Anna",
         "mail" : "Annall@dominio.com",
+        "telefono" : "079"
+    },
+    {
+        "nome" : "Client",
+        "mail" : "Fake@dominio.com",
         "telefono" : "079"
     }
 ]
