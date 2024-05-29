@@ -5,6 +5,11 @@
         "telefono" : "079"
     },
     {
+        "nome" : "Giovanni",
+        "mail" : "Email@dominio.com",
+        "telefono" : "079"
+    },
+    {
         "nome" : "Luca",
         "mail" : "Lucazz@dominio.com",
         "telefono" : "34208-----"

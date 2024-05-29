@@ -4,7 +4,7 @@ const yargs = require('yargs')
 const { hideBin } = require('yargs/helpers')
 const argv = yargs(hideBin(process.argv)).argv
 
-const { cercaCliente } = require('./app-fn')
+const { cercaCliente, allCliente } = require('./app-fn')
 
 
 /* process.versions */
@@ -32,9 +32,30 @@ yargs.command({
     },
     handler(argv){
         //console.log(argv)
-       const cliente = cercaCliente(argv.nome);
-       console.log(cliente);
+       const ris = cercaCliente(argv.nome);
+       if(ris.status){
+        console.log(chalk.green.bold('cliente trovato !!'));
+        console.log(ris.cliente);
+       } else {
+        console.log(chalk.red.bold('cliente non esiste'));
+        console.log('forse cercavi -> ' + ris.suggerimenti)
+       }
     }
 });
+
+
+//node app.js tutti  mostra tutti gli utenti
+yargs.command({
+    command: 'tutti',
+    describe: 'Ricerca cliente in base al suo nome',
+    handler(argv){
+        //console.log(argv)
+     const ris = allCliente();
+        console.log(ris)
+       }
+    }
+);
+
+
 
 yargs.parse();
