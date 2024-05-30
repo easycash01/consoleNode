@@ -1,0 +1,17 @@
+MOSTRA TUTTI GLI UTENTI
+-node app.js tutti  
+
+CERCA UN UTENTE PER nome
+-node app.js cerca --nome="Luca"
+
+AGGIUNGERE UN CLIENTE
+--nome="Mar" --email="Ma@mail.it" --telefono=078
+
+
+RIMUOVERE UN CLIENTE 
+
+
+---------------------
+riformattare il json 
+Shift + Alt + F
+---------------------

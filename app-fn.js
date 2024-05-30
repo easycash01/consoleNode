@@ -1,8 +1,8 @@
-const files = require('fs');
+const fs = require('fs');
 
 function cercaCliente(nome){
     //console.log(nome);
-    const clientiJSON = files.readFileSync('clienti.json' , 'utf8' ),
+    const clientiJSON = fs.readFileSync('clienti.json' , 'utf8' ),
     //console.log(JSON.parse(clientiJSON));
     clienti = JSON.parse(clientiJSON), 
     cliente = clienti.find( clienteItem => clienteItem.nome === nome),
@@ -36,8 +36,21 @@ function allCliente(){
     return clienti;
 }
 
+function addCliente({nome, email, telefono}){
+    const clientiJSON = fs.readFileSync('clienti.json', 'utf-8'),
+          clienti = JSON.parse(clientiJSON);
+
+    clienti.push({nome, email, telefono});
+
+    fs.writeFileSync('clienti.json', JSON.stringify(clienti));
+
+    console.log(clienti);
+
+}
+
 
 module.exports = {
     cercaCliente,
-    allCliente
+    allCliente,
+    addCliente
 }

@@ -4,7 +4,7 @@ const yargs = require('yargs')
 const { hideBin } = require('yargs/helpers')
 const argv = yargs(hideBin(process.argv)).argv
 
-const { cercaCliente, allCliente } = require('./app-fn')
+const { cercaCliente, allCliente, addCliente } = require('./app-fn')
 
 
 /* process.versions */
@@ -57,5 +57,30 @@ yargs.command({
 );
 
 
+yargs.command({
+    command: 'aggiungi',
+    describe: 'Aggiunto un nuovo cliente',
+    builder: {
+        nome:{
+            describe: 'Nome del cliente da aggiungere',
+            demandOption: true,
+            typeo: 'string'
+        },
+        email:{
+            describe: 'Email del cliente da aggiungere',
+            demandOption: true,
+            typeo: 'string'
+        },
+        telefono:{
+            describe: 'Telefono del cliente da aggiungere',
+            demandOption: true,
+            typeo: 'number'
+        }
+    },
+    handler(argv){
+        addCliente(argv)
+        console.log('prova aggiungi')
+    }    
+})
 
 yargs.parse();

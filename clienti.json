@@ -1,27 +1,28 @@
 [
     {
-        "nome" : "Gianni",
-        "mail" : "Email@dominio.com",
-        "telefono" : "079"
+        "nome": "Gianni",
+        "mail": "Email@dominio.com",
+        "telefono": "079"
     },
     {
-        "nome" : "Giovanni",
-        "mail" : "Email@dominio.com",
-        "telefono" : "079"
+        "nome": "Giovanni",
+        "mail": "Email@dominio.com",
+        "telefono": "079"
     },
     {
-        "nome" : "Luca",
-        "mail" : "Lucazz@dominio.com",
-        "telefono" : "34208-----"
+        "nome": "Luca",
+        "mail": "Lucazz@dominio.com",
+        "telefono": "34208-----"
     },
     {
-        "nome" : "Anna",
-        "mail" : "Annall@dominio.com",
-        "telefono" : "079"
+        "nome": "Anna",
+        "mail": "Annall@dominio.com",
+        "telefono": "079"
     },
     {
-        "nome" : "Client",
-        "mail" : "Fake@dominio.com",
-        "telefono" : "079"
+        "nome": "Client",
+        "mail": "Fake@dominio.com",
+        "telefono": "079"
     }
+ 
 ]
